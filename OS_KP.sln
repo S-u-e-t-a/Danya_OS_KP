@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OS_KP", "OS_KP\OS_KP.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageReplacementAlgs", "PageReplacementAlgs\PageReplacementAlgs.csproj", "{B98DE93B-AA95-4DB1-80B4-B79CDB847AE1}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupOS_KP", "SetupOS_KP\SetupOS_KP.vdproj", "{A7BDDDEF-6A64-4F08-8535-B783F1225716}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{B98DE93B-AA95-4DB1-80B4-B79CDB847AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B98DE93B-AA95-4DB1-80B4-B79CDB847AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B98DE93B-AA95-4DB1-80B4-B79CDB847AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BDDDEF-6A64-4F08-8535-B783F1225716}.Debug|Any CPU.ActiveCfg = Debug
+		{A7BDDDEF-6A64-4F08-8535-B783F1225716}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

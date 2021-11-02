@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 
@@ -44,32 +43,29 @@ namespace OS_KP
             header.Alignment = Element.ALIGN_CENTER;
             doc.Add(header);
 
-            var image = iTextSharp.text.Image.GetInstance(bitmap);
-
+            var image = Image.GetInstance(bitmap);
+            var pageWidth = doc.PageSize.Width - 100;
+            var pageHeight = doc.PageSize.Height - 400;
+            image.ScaleToFit(pageWidth, pageHeight);
             image.Alignment = Element.ALIGN_CENTER;
             doc.Add(image);
 
-            //var nruLogParagraph = new Paragraph(nruLog + "\n", FontFactory.GetFont("LUCIDA_CONSOLE", Encoding.UTF8.ToString(), 12));
             var nruLogParagraph = new Paragraph(nruLog + "\n\n", lucidaConsole);
             nruLogParagraph.Alignment = Element.ALIGN_JUSTIFIED;
             doc.Add(nruLogParagraph);
 
-            //var lruLogParagraph = new Paragraph(lruLog + "\n", FontFactory.GetFont("LUCIDA_CONSOLE", 12));
             var lruLogParagraph = new Paragraph(lruLog + "\n\n", lucidaConsole);
             lruLogParagraph.Alignment = Element.ALIGN_JUSTIFIED;
             doc.Add(lruLogParagraph);
 
-            //var fifoLogParagraph = new Paragraph(fifoLog + "\n", FontFactory.GetFont("LUCIDA_CONSOLE", 12));
             var fifoLogParagraph = new Paragraph(fifoLog + "\n\n", lucidaConsole);
             fifoLogParagraph.Alignment = Element.ALIGN_JUSTIFIED;
             doc.Add(fifoLogParagraph);
 
-            //var scLogParagraph = new Paragraph(scLog + "\n", FontFactory.GetFont("LUCIDA_CONSOLE", 12));
             var scLogParagraph = new Paragraph(scLog + "\n\n", lucidaConsole);
             scLogParagraph.Alignment = Element.ALIGN_JUSTIFIED;
             doc.Add(scLogParagraph);
 
-            //var clockLogParagraph = new Paragraph(clockLog + "\n", FontFactory.GetFont("LUCIDA_CONSOLE", 12));
             var clockLogParagraph = new Paragraph(clockLog + "\n\n", lucidaConsole);
             clockLogParagraph.Alignment = Element.ALIGN_JUSTIFIED;
             doc.Add(clockLogParagraph);
