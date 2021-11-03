@@ -82,6 +82,11 @@ namespace OS_KP
                                     .Select(n => int.Parse(n))
                                     .ToList();
 
+                if(pages.Count == 0)
+                {
+                    throw new NullReferenceException();
+                }
+
                 Algorithms.NRU(pages, MemoryCount, out nruInteraptions, out nruLog);
                 NRUTextBox.Text = nruLog;
                 SeriesCol.Add(new ColumnSeries
