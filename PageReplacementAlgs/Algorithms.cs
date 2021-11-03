@@ -210,7 +210,7 @@ namespace PageReplacementAlgs
                             memory.RemoveAt(0);
                             counter++;
                             i--;
-                            sb.Append(String.Format("           | Обращение: {0, 3} | Страница: {1, 3} | Память: {2}\n", counter, calledPage, string.Join(" ", memory)));
+                            sb.Append(String.Format("Прерывание | Обращение: {0, 3} | Страница: {1, 3} | Память: {2}\n", counter, calledPage, string.Join(" ", memory)));
                         }
                     }
                 }
@@ -276,7 +276,7 @@ namespace PageReplacementAlgs
                             counter++;
                             clockArrow++;
                             i--;
-                            sb.Append(String.Format("           | Обращение: {0, 3} | Страница: {1, 3} | Память: {2}\n", counter, calledPage, string.Join(" ", memory)));
+                            sb.Append(String.Format("Прерывание | Обращение: {0, 3} | Страница: {1, 3} | Память: {2}\n", counter, calledPage, string.Join(" ", memory)));
                         }
                     }
                 }
