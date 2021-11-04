@@ -38,7 +38,7 @@ namespace PageReplacementAlgs
                     }
                 }
             }
-            sb.Append(String.Format("\nКоличетсво прерываний: {0}", interuptions));
+            sb.Append(String.Format("\nКоличество прерываний: {0}", interuptions));
             fifoLog = sb.ToString();
             memory.Clear();
         }
@@ -84,7 +84,7 @@ namespace PageReplacementAlgs
                     }
                 }
             }
-            sb.Append(String.Format("\nКоличетсво прерываний: {0}", interuptions));
+            sb.Append(String.Format("\nКоличество прерываний: {0}", interuptions));
             lruLog = sb.ToString();
             memory.Clear();
         }
@@ -155,7 +155,7 @@ namespace PageReplacementAlgs
                     }
                 }
             }
-            sb.Append(String.Format("\nКоличетсво прерываний: {0}", interuptions));
+            sb.Append(String.Format("\nКоличество прерываний: {0}", interuptions));
             nruLog = sb.ToString();
             memory.Clear();
         }
@@ -215,7 +215,7 @@ namespace PageReplacementAlgs
                     }
                 }
             }
-            sb.Append(String.Format("\nКоличетсво прерываний: {0}", interuptions));
+            sb.Append(String.Format("\nКоличество прерываний: {0}", interuptions));
             scLog = sb.ToString();
             memory.Clear();
         }
@@ -281,7 +281,7 @@ namespace PageReplacementAlgs
                     }
                 }
             }
-            sb.Append(String.Format("\nКоличетсво прерываний: {0}", interuptions));
+            sb.Append(String.Format("\nКоличество прерываний: {0}", interuptions));
             clockLog = sb.ToString();
             memory.Clear();
         }
